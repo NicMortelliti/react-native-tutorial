@@ -1,14 +1,26 @@
-import { StatusBar } from "expo-status-bar";
+import React from "react";
 import { StyleSheet, View } from "react-native";
-import Home from "./Home";
+import PresentationalComponent from "./PresentationalComponent";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Home />
-    </View>
-  );
+export default class App extends React.Component {
+  state = {
+    myState: "This is my state",
+  };
+
+  updateState = () => {
+    this.setState({ myState: "The state is updated" });
+  };
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <PresentationalComponent
+          myState={this.state.myState}
+          updateState={this.updateState}
+        />
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
