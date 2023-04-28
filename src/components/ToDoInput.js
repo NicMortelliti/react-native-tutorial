@@ -32,7 +32,7 @@ const TodoInput = (props) => {
 
   return (
     <Modal visible={props.visible} animationType="slide">
-      <Header title="To-Do App"></Header>
+      <Header title="To-Do App" />
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Task"
@@ -42,10 +42,7 @@ const TodoInput = (props) => {
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button
-              title="CANCEL"
-              color="red"
-              onPress={props.onCancel}></Button>
+            <Button title="CANCEL" color="red" onPress={props.onCancel} />
           </View>
           <View style={styles.button}>
             <Button
