@@ -53,7 +53,6 @@ const TodoInput = (props) => {
           </View>
         </View>
       </View>
-      ToDoInput
     </Modal>
   );
 };
