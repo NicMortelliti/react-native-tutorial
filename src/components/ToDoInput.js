@@ -6,7 +6,6 @@ import {
   StyleSheet,
   Modal,
   Alert,
-  Image,
 } from "react-native";
 import Header from "./Header";
 
