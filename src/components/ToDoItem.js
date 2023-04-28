@@ -1,11 +1,6 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-} from "react-native";
-
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { BouncyCheckbox as CheckBox } from "react-native-bouncy-checkbox";
 
 const ToDoItem = (props) => {
   const [check, setCheck] = useState(false);
