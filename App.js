@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Button, FlatList, Image } from "react-native";
+import { StyleSheet, View, Button, FlatList } from "react-native";
 
 import ToDoItem from "./src/components/ToDoItem";
 import ToDoInput from "./src/components/ToDoInput";
