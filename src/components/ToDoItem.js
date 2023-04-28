@@ -4,8 +4,8 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  CheckBox,
 } from "react-native";
+
 
 const ToDoItem = (props) => {
   const [check, setCheck] = useState(false);

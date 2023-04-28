@@ -34,7 +34,6 @@ const TodoInput = (props) => {
   return (
     <Modal visible={props.visible} animationType="slide">
       <Header title="To-Do App"></Header>
-
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Task"
@@ -58,6 +57,7 @@ const TodoInput = (props) => {
           </View>
         </View>
       </View>
+      ToDoInput
     </Modal>
   );
 };
