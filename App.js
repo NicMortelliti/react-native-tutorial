@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Button, FlatList } from "react-native";
+import { StyleSheet, View, Button, FlatList, Text } from "react-native";
 
 import ToDoItem from "./src/components/ToDoItem";
 import ToDoInput from "./src/components/ToDoInput";
@@ -46,11 +46,15 @@ export default function App() {
           keyExtractor={(item, index) => item.id}
           data={tasks}
           renderItem={(itemData) => (
-            <ToDoItem
-              title={itemData.item.value}
-              onDelete={deleteTaskHandler}
-              id={itemData.item.id}
-            />
+            <Text>
+              {itemData.item.id}
+              {itemData.item.value}
+            </Text>
+            // <ToDoItem
+            //   title={itemData.item.value}
+            //   onDelete={deleteTaskHandler}
+            //   id={itemData.item.id}
+            // />
           )}
         />
       </View>
