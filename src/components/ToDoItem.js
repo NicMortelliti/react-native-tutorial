@@ -12,11 +12,7 @@ const ToDoItem = (props) => {
         <Text>{props.title}</Text>
       </View>
       <BouncyCheckbox value={check} onValueChange={() => setCheck(!check)} />
-      <TouchableOpacity
-        onPress={props.onDelete.bind(this, props.id)}
-        style={styles.button}>
-        <Text style={styles.text}>Delete</Text>
-      </TouchableOpacity>
+      <DeleteItem onDelete={props.onDelete.bind(this, props.id)} />
     </View>
   );
 };
