@@ -46,15 +46,11 @@ export default function App() {
           keyExtractor={(item, index) => item.id}
           data={tasks}
           renderItem={(itemData) => (
-            <Text>
-              {itemData.item.id}
-              {itemData.item.value}
-            </Text>
-            // <ToDoItem
-            //   title={itemData.item.value}
-            //   onDelete={deleteTaskHandler}
-            //   id={itemData.item.id}
-            // />
+            <ToDoItem
+              title={itemData.item.value}
+              onDelete={deleteTaskHandler}
+              id={itemData.item.id}
+            />
           )}
         />
       </View>
